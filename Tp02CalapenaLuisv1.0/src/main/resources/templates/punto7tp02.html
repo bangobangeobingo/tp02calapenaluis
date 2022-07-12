@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>punto7</title>
+</head>
+<body>
+<h1>Listado de Alumnos</h1>
+<table>
+     <tr>
+     <th>Nombre</th>
+     <th>Apellido</th>
+     <th>Edad</th>
+     <th>Dni</th>
+     <th>Telefono</th>
+     </tr>
+     <tr th:each="alu:${listadoAlumno}">
+     <th th:text="${alu.nombre}"> </th>
+     <th th:text="${alu.apellido}"></th>
+     <th th:text="${alu.fechanac}"></th>
+     <th th:text="${alu.dni}"></th>
+     <th th:text="${alu.telefono}"></th>
+     </tr>
+     
+</table>
+      <a href="menu">volver al Menu</a>
+</body>
+</html>

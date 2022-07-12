@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th ="http://www.thymeleaf.org"> 
+<head>
+<meta charset="UTF-8">
+<title>Punto4</title>
+</head>
+<body>
+<h1>Numeros pares e impares</h1>
+<table> 
+       <tr> 
+       <th>Numeros del Arreglo</th> 
+       <tr>
+       
+       <tr th:each="ent:${contenido}">
+       <th th:text="${ent.entero}"></th>
+       </tr>   
+</table>
+<a href="/menu">volver al Menu</a>
+</body>
+</html>
